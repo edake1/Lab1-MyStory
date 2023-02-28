@@ -59,6 +59,20 @@ I had **trouble with auto layout constraints**. I know where the autolayout butt
 -- In short, I would appreciate it if you guys **go over how to ensure support for all screen sizes**. I searched online and couldn't find any good resource. Most of the resources I got were doing it programmatically, and were all very old (videos were made 3-5 years ago)
 -- Tried doing table view for scrolling but could not find a good resource to teach me. 
 
+Some Pics 
+<img width="469" alt="image" src="https://user-images.githubusercontent.com/74028493/221747027-ead587bf-dab6-4a69-9f5b-b212c0c3abac.png">
+
+<img width="460" alt="image" src="https://user-images.githubusercontent.com/74028493/221747064-ec2c0b41-f9d6-4ebb-9ba7-5baa6f124258.png">
+
+<img width="457" alt="image" src="https://user-images.githubusercontent.com/74028493/221747091-bc99c538-3838-46ba-ae77-efbd5f919649.png">
+
+<img width="455" alt="image" src="https://user-images.githubusercontent.com/74028493/221747121-aef697d0-a7b6-48fc-a0d7-1ddbb0c1c3ed.png">
+
+<img width="458" alt="image" src="https://user-images.githubusercontent.com/74028493/221747151-a42ab555-a217-4021-9150-6f7b0673619d.png">
+
+<img width="463" alt="image" src="https://user-images.githubusercontent.com/74028493/221747182-b225a3bc-fc73-4ee5-81bb-997b1630c683.png">
+
+
 ## License
 
     Copyright [2023] [Edwin Dake]

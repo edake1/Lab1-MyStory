@@ -31,14 +31,19 @@ Here's a walkthrough of implemented user stories:
 
 <img src='https://i.imgur.com/68HqjYU.gifv' title='Video Walkthrough Ipad-mini' width='' alt='Video Walkthrough' />
 
+https://i.imgur.com/68HqjYU.gifv
+
 <img src='https://i.imgur.com/ZgVnk6v.gifv' title='Video Walkthrough IPhone14' width='' alt='Video Walkthrough' />
+https://i.imgur.com/ZgVnk6v.gifv
 
 <img src='https://i.imgur.com/WKVBph2.gifv' title='Video Walkthrough IPhone SE' width='' alt='Video Walkthrough' />
+https://i.imgur.com/WKVBph2.gifv
 
 <img src='https://i.imgur.com/64U7Spl.gifv' title='Video Walkthrough IPhone14 Pro' width='' alt='Video Walkthrough' />
+https://i.imgur.com/64U7Spl.gifv
 
 <img src='https://i.imgur.com/9FJvPNH.gifv' title='Video Walkthrough IPhone14 Pro Max' width='' alt='Video Walkthrough' />
-
+https://i.imgur.com/9FJvPNH.gifv
 
 <!-- KAP -->
 GIF created with Kap 

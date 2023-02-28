@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="vyt-dN-2An">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--IronManController-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController title="IronManController" id="BYZ-38-t0r" customClass="ViewController" customModule="Lab_1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="wXv-eV-06H" userLabel="Main Stack View">
+                                <rect key="frame" x="50" y="113" width="293" height="369"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="RJ9-ee-7ft">
+                                        <rect key="frame" x="0.0" y="0.0" width="293" height="179.66666666666666"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" horizontalCompressionResistancePriority="749" verticalCompressionResistancePriority="749" translatesAutoresizingMaskIntoConstraints="NO" id="eGE-YN-xSi" userLabel="Photo View">
+                                                <rect key="frame" x="0.0" y="0.0" width="293" height="179.66666666666666"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="iron-title" translatesAutoresizingMaskIntoConstraints="NO" id="l0h-jT-Bds">
+                                                        <rect key="frame" x="26" y="11" width="240" height="128"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    </imageView>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <gestureRecognizers/>
+                                                <connections>
+                                                    <outletCollection property="gestureRecognizers" destination="4DH-yb-d3n" appends="YES" id="plS-SZ-srZ"/>
+                                                </connections>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="749" verticalCompressionResistancePriority="749" axis="vertical" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="eiP-GD-bzA" userLabel="Button Stack View">
+                                        <rect key="frame" x="44.666666666666671" y="189.66666666666669" width="203.66666666666663" height="179.33333333333331"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="749" verticalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EDs-lT-bzx">
+                                                <rect key="frame" x="0.0" y="0.0" width="203.66666666666666" height="56.333333333333336"/>
+                                                <gestureRecognizers/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="tinted" title="My Cool Back Story"/>
+                                                <connections>
+                                                    <action selector="didTapButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ETR-OC-lR3"/>
+                                                    <outletCollection property="gestureRecognizers" destination="mig-gJ-J4w" appends="YES" id="cUt-vd-K6f"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="1" contentMode="scaleToFill" horizontalCompressionResistancePriority="749" verticalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MAH-nh-WdE">
+                                                <rect key="frame" x="0.0" y="61.333333333333314" width="203.66666666666666" height="56.666666666666657"/>
+                                                <gestureRecognizers/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="tinted" title="Founding The Avengers"/>
+                                                <connections>
+                                                    <action selector="didTapButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6cG-Ex-h7R"/>
+                                                    <outletCollection property="gestureRecognizers" destination="O6H-Am-eMm" appends="YES" id="FdS-Hr-ggj"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="2" contentMode="scaleToFill" horizontalCompressionResistancePriority="749" verticalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EBe-Lv-PND">
+                                                <rect key="frame" x="0.0" y="122.99999999999999" width="203.66666666666666" height="56.333333333333329"/>
+                                                <gestureRecognizers/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="tinted" title="The Endgame"/>
+                                                <connections>
+                                                    <action selector="didTapButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="y2a-Rl-nX3"/>
+                                                    <outletCollection property="gestureRecognizers" destination="WQb-OE-0QV" appends="YES" id="2HN-po-Boc"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="RJ9-ee-7ft" firstAttribute="leading" secondItem="wXv-eV-06H" secondAttribute="leadingMargin" id="nPO-p1-dUZ"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="wXv-eV-06H" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="85A-oa-POS"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="wXv-eV-06H" secondAttribute="bottom" constant="336" id="SHJ-la-ut9"/>
+                            <constraint firstItem="wXv-eV-06H" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="dUx-nL-oxi"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="wXv-eV-06H" secondAttribute="trailing" constant="50" id="f9i-aa-u18"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Iron Man" id="8sx-rx-jf5"/>
+                    <connections>
+                        <segue destination="2xJ-we-A1Z" kind="show" identifier="detailSegue" id="het-kJ-7J9"/>
+                        <segue destination="jnl-DT-QOT" kind="show" identifier="photoSegue" id="OC8-ob-aU5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="mig-gJ-J4w">
+                    <connections>
+                        <action selector="didTapButtonGesture:" destination="BYZ-38-t0r" id="1eP-Fx-b8B"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="O6H-Am-eMm">
+                    <connections>
+                        <action selector="didTapButtonGesture:" destination="BYZ-38-t0r" id="daH-57-ubK"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="WQb-OE-0QV">
+                    <connections>
+                        <action selector="didTapButtonGesture:" destination="BYZ-38-t0r" id="yF9-4J-bV1"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="4DH-yb-d3n">
+                    <connections>
+                        <action selector="didTapPhoto:" destination="BYZ-38-t0r" id="emy-uf-iaM"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="1977.8625954198471" y="-34.507042253521128"/>
+        </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="wKp-SX-i82">
+            <objects>
+                <viewController id="2xJ-we-A1Z" customClass="DetailViewController" customModule="Lab_1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="JYr-OF-5TU">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" horizontalCompressionResistancePriority="749" verticalCompressionResistancePriority="749" translatesAutoresizingMaskIntoConstraints="NO" id="FGW-i4-efC">
+                                <rect key="frame" x="40" y="143" width="313" height="238"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="238" id="leo-c9-GGE"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jV6-6G-dJX">
+                                <rect key="frame" x="40" y="391" width="313" height="238"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="SmA-8j-k6n"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="FGW-i4-efC" firstAttribute="top" secondItem="SmA-8j-k6n" secondAttribute="top" constant="40" id="GrB-VN-Leb"/>
+                            <constraint firstItem="jV6-6G-dJX" firstAttribute="trailing" secondItem="FGW-i4-efC" secondAttribute="trailing" id="KeX-w6-Fi2"/>
+                            <constraint firstItem="SmA-8j-k6n" firstAttribute="bottom" secondItem="jV6-6G-dJX" secondAttribute="bottom" constant="189" id="Rvk-qp-fSI"/>
+                            <constraint firstItem="jV6-6G-dJX" firstAttribute="leading" secondItem="FGW-i4-efC" secondAttribute="leading" id="ZqV-hQ-ddq"/>
+                            <constraint firstItem="FGW-i4-efC" firstAttribute="centerX" secondItem="JYr-OF-5TU" secondAttribute="centerX" id="fFP-JL-7d1"/>
+                            <constraint firstItem="FGW-i4-efC" firstAttribute="leading" secondItem="SmA-8j-k6n" secondAttribute="leading" constant="40" id="lrj-1L-ZdH"/>
+                            <constraint firstItem="jV6-6G-dJX" firstAttribute="top" secondItem="FGW-i4-efC" secondAttribute="bottom" constant="10" id="v6j-fi-Euu"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="EqU-SJ-BMb"/>
+                    <connections>
+                        <outlet property="detailsLabel" destination="jV6-6G-dJX" id="Fuh-hk-mJ6"/>
+                        <outlet property="ironmanImageView" destination="FGW-i4-efC" id="jBB-Yz-rM4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SaE-Yr-yHx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2799.2366412213742" y="-35.211267605633807"/>
+        </scene>
+        <!--Tony Stark "Iron Man"-->
+        <scene sceneID="qZN-8W-Fxi">
+            <objects>
+                <viewController id="jnl-DT-QOT" customClass="PhotoViewController" customModule="Lab_1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rAh-8u-2VX">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" horizontalCompressionResistancePriority="749" verticalCompressionResistancePriority="749" image="ironman-title" translatesAutoresizingMaskIntoConstraints="NO" id="jCL-Mu-I39">
+                                <rect key="frame" x="16" y="114" width="361" height="675"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Ezg-yk-ZT1"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="jCL-Mu-I39" firstAttribute="top" secondItem="Ezg-yk-ZT1" secondAttribute="top" constant="11" id="NER-ka-ttG"/>
+                            <constraint firstItem="Ezg-yk-ZT1" firstAttribute="bottom" secondItem="jCL-Mu-I39" secondAttribute="bottom" constant="29" id="WRM-9K-iFt"/>
+                            <constraint firstItem="jCL-Mu-I39" firstAttribute="leading" secondItem="rAh-8u-2VX" secondAttribute="leadingMargin" id="lMl-YN-tWF"/>
+                            <constraint firstItem="Ezg-yk-ZT1" firstAttribute="trailing" secondItem="jCL-Mu-I39" secondAttribute="trailing" constant="16" id="nyh-Ud-8el"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Tony Stark &quot;Iron Man&quot;" id="DbQ-lW-3ZT"/>
+                    <connections>
+                        <outlet property="imageView" destination="jCL-Mu-I39" id="hds-M6-i8K"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HoX-bp-rTL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1977.8625954198471" y="668.30985915492965"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="C5U-Dn-M3I">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="vyt-dN-2An" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Dxj-MA-w62">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="tPg-LY-blp" kind="relationship" relationship="rootViewController" id="NkH-TX-Tcz"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PtQ-Pp-8xW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="124.42748091603053" y="-34.507042253521128"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="dbk-Ts-AHU">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="tPg-LY-blp" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="gEy-yP-wJb"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Slf-LB-Sur">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="NWX-Sa-GU8"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mxY-An-DBk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1051.145038167939" y="-34.507042253521128"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="iron-title" width="289" height="175"/>
+        <image name="ironman-title" width="168" height="299"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

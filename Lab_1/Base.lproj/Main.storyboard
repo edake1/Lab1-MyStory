@@ -16,76 +16,72 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="wXv-eV-06H" userLabel="Main Stack View">
-                                <rect key="frame" x="50" y="113" width="293" height="369"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="DLw-VU-Hub">
+                                <rect key="frame" x="16" y="103" width="361" height="419"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="RJ9-ee-7ft">
-                                        <rect key="frame" x="0.0" y="0.0" width="293" height="179.66666666666666"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dfG-6j-Pd7" userLabel="Photo View">
+                                        <rect key="frame" x="0.0" y="0.0" width="361" height="294"/>
                                         <subviews>
-                                            <view contentMode="scaleToFill" horizontalCompressionResistancePriority="749" verticalCompressionResistancePriority="749" translatesAutoresizingMaskIntoConstraints="NO" id="eGE-YN-xSi" userLabel="Photo View">
-                                                <rect key="frame" x="0.0" y="0.0" width="293" height="179.66666666666666"/>
-                                                <subviews>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="iron-title" translatesAutoresizingMaskIntoConstraints="NO" id="l0h-jT-Bds">
-                                                        <rect key="frame" x="26" y="11" width="240" height="128"/>
-                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    </imageView>
-                                                </subviews>
-                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                                <gestureRecognizers/>
-                                                <connections>
-                                                    <outletCollection property="gestureRecognizers" destination="4DH-yb-d3n" appends="YES" id="plS-SZ-srZ"/>
-                                                </connections>
-                                            </view>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" horizontalCompressionResistancePriority="749" verticalCompressionResistancePriority="749" image="iron-title" translatesAutoresizingMaskIntoConstraints="NO" id="4zI-u5-TOG">
+                                                <rect key="frame" x="8" y="8" width="345" height="278"/>
+                                            </imageView>
                                         </subviews>
-                                    </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="749" verticalCompressionResistancePriority="749" axis="vertical" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="eiP-GD-bzA" userLabel="Button Stack View">
-                                        <rect key="frame" x="44.666666666666671" y="189.66666666666669" width="203.66666666666663" height="179.33333333333331"/>
+                                        <color key="backgroundColor" red="0.67378439528452583" green="1" blue="0.97222587734429666" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <gestureRecognizers/>
+                                        <constraints>
+                                            <constraint firstItem="4zI-u5-TOG" firstAttribute="trailing" secondItem="dfG-6j-Pd7" secondAttribute="trailingMargin" id="4WD-9k-lor"/>
+                                            <constraint firstItem="4zI-u5-TOG" firstAttribute="bottom" secondItem="dfG-6j-Pd7" secondAttribute="bottomMargin" id="D0D-gT-YPU"/>
+                                            <constraint firstItem="4zI-u5-TOG" firstAttribute="leading" secondItem="dfG-6j-Pd7" secondAttribute="leadingMargin" id="GmD-RU-2cO"/>
+                                            <constraint firstItem="4zI-u5-TOG" firstAttribute="top" secondItem="dfG-6j-Pd7" secondAttribute="topMargin" id="i8g-wv-if9"/>
+                                        </constraints>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="eL5-oN-w0B" appends="YES" id="SeC-Fv-DAZ"/>
+                                        </connections>
+                                    </view>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="fsZ-Gt-MQ5" userLabel="Button Stack View">
+                                        <rect key="frame" x="78.666666666666671" y="294" width="203.66666666666663" height="125"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="749" verticalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EDs-lT-bzx">
-                                                <rect key="frame" x="0.0" y="0.0" width="203.66666666666666" height="56.333333333333336"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l5e-cP-22Y">
+                                                <rect key="frame" x="0.0" y="0.0" width="203.66666666666666" height="35"/>
                                                 <gestureRecognizers/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="tinted" title="My Cool Back Story"/>
                                                 <connections>
-                                                    <action selector="didTapButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ETR-OC-lR3"/>
-                                                    <outletCollection property="gestureRecognizers" destination="mig-gJ-J4w" appends="YES" id="cUt-vd-K6f"/>
+                                                    <outletCollection property="gestureRecognizers" destination="h4Y-yg-vUO" appends="YES" id="Jng-cE-HnK"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" tag="1" contentMode="scaleToFill" horizontalCompressionResistancePriority="749" verticalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MAH-nh-WdE">
-                                                <rect key="frame" x="0.0" y="61.333333333333314" width="203.66666666666666" height="56.666666666666657"/>
+                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lEW-tk-laL">
+                                                <rect key="frame" x="0.0" y="45" width="203.66666666666666" height="35"/>
                                                 <gestureRecognizers/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="35" id="b1e-KM-y6n"/>
+                                                </constraints>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="tinted" title="Founding The Avengers"/>
                                                 <connections>
-                                                    <action selector="didTapButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6cG-Ex-h7R"/>
-                                                    <outletCollection property="gestureRecognizers" destination="O6H-Am-eMm" appends="YES" id="FdS-Hr-ggj"/>
+                                                    <outletCollection property="gestureRecognizers" destination="FjO-FY-fga" appends="YES" id="TH0-gu-xqL"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" tag="2" contentMode="scaleToFill" horizontalCompressionResistancePriority="749" verticalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EBe-Lv-PND">
-                                                <rect key="frame" x="0.0" y="122.99999999999999" width="203.66666666666666" height="56.333333333333329"/>
+                                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F0k-6P-WRc">
+                                                <rect key="frame" x="0.0" y="90" width="203.66666666666666" height="35"/>
                                                 <gestureRecognizers/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="tinted" title="The Endgame"/>
                                                 <connections>
-                                                    <action selector="didTapButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="y2a-Rl-nX3"/>
-                                                    <outletCollection property="gestureRecognizers" destination="WQb-OE-0QV" appends="YES" id="2HN-po-Boc"/>
+                                                    <outletCollection property="gestureRecognizers" destination="EWc-RU-2SR" appends="YES" id="YJW-K4-g2Q"/>
                                                 </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
                                 </subviews>
-                                <constraints>
-                                    <constraint firstItem="RJ9-ee-7ft" firstAttribute="leading" secondItem="wXv-eV-06H" secondAttribute="leadingMargin" id="nPO-p1-dUZ"/>
-                                </constraints>
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.67846317425680891" green="1" blue="0.97548859794820286" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstItem="wXv-eV-06H" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="85A-oa-POS"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="wXv-eV-06H" secondAttribute="bottom" constant="336" id="SHJ-la-ut9"/>
-                            <constraint firstItem="wXv-eV-06H" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="dUx-nL-oxi"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="wXv-eV-06H" secondAttribute="trailing" constant="50" id="f9i-aa-u18"/>
+                            <constraint firstItem="DLw-VU-Hub" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="6Dz-eG-qaH"/>
+                            <constraint firstItem="DLw-VU-Hub" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="LjM-Qa-3p6"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="DLw-VU-Hub" secondAttribute="trailing" constant="16" id="YFA-5F-DvR"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Iron Man" id="8sx-rx-jf5"/>
@@ -95,24 +91,24 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="mig-gJ-J4w">
+                <tapGestureRecognizer id="eL5-oN-w0B">
                     <connections>
-                        <action selector="didTapButtonGesture:" destination="BYZ-38-t0r" id="1eP-Fx-b8B"/>
+                        <action selector="didTapPhoto:" destination="BYZ-38-t0r" id="Xs4-c9-fQJ"/>
                     </connections>
                 </tapGestureRecognizer>
-                <tapGestureRecognizer id="O6H-Am-eMm">
+                <tapGestureRecognizer id="h4Y-yg-vUO">
                     <connections>
-                        <action selector="didTapButtonGesture:" destination="BYZ-38-t0r" id="daH-57-ubK"/>
+                        <action selector="didTapButtonGesture:" destination="BYZ-38-t0r" id="rOr-tJ-1Wq"/>
                     </connections>
                 </tapGestureRecognizer>
-                <tapGestureRecognizer id="WQb-OE-0QV">
+                <tapGestureRecognizer id="FjO-FY-fga">
                     <connections>
-                        <action selector="didTapButtonGesture:" destination="BYZ-38-t0r" id="yF9-4J-bV1"/>
+                        <action selector="didTapButtonGesture:" destination="BYZ-38-t0r" id="ody-eT-Lpl"/>
                     </connections>
                 </tapGestureRecognizer>
-                <tapGestureRecognizer id="4DH-yb-d3n">
+                <tapGestureRecognizer id="EWc-RU-2SR">
                     <connections>
-                        <action selector="didTapPhoto:" destination="BYZ-38-t0r" id="emy-uf-iaM"/>
+                        <action selector="didTapButtonGesture:" destination="BYZ-38-t0r" id="w5h-Rt-N8K"/>
                     </connections>
                 </tapGestureRecognizer>
             </objects>
@@ -140,7 +136,7 @@
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="SmA-8j-k6n"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="systemGray5Color"/>
                         <constraints>
                             <constraint firstItem="FGW-i4-efC" firstAttribute="top" secondItem="SmA-8j-k6n" secondAttribute="top" constant="40" id="GrB-VN-Leb"/>
                             <constraint firstItem="jV6-6G-dJX" firstAttribute="trailing" secondItem="FGW-i4-efC" secondAttribute="trailing" id="KeX-w6-Fi2"/>
@@ -174,7 +170,7 @@
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Ezg-yk-ZT1"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.95202632627026806" green="0.96841138601303101" blue="0.75384211867373407" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="jCL-Mu-I39" firstAttribute="top" secondItem="Ezg-yk-ZT1" secondAttribute="top" constant="11" id="NER-ka-ttG"/>
                             <constraint firstItem="Ezg-yk-ZT1" firstAttribute="bottom" secondItem="jCL-Mu-I39" secondAttribute="bottom" constant="29" id="WRM-9K-iFt"/>
@@ -232,8 +228,8 @@
     <resources>
         <image name="iron-title" width="289" height="175"/>
         <image name="ironman-title" width="168" height="299"/>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

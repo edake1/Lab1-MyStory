@@ -19,7 +19,7 @@ class DetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = ironman?.headText
-        detailsLabel.numberOfLines = 10
+        detailsLabel.numberOfLines = 20
         
         // Do any additional setup after loading the view.
         if let ironman = ironman {

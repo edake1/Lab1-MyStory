@@ -1,6 +1,6 @@
 # Project 1 - *MyStory*
 
-Submitted by: **Edwin Dakee**
+Submitted by: **Edwin Dake**
 
 **MyStory** is an app that introduces Tony Stark "Iron Man"  
 

@@ -2,7 +2,7 @@
 
 Submitted by: **Edwin Dake**
 
-**MyStory** is an app that introduces Tony Stark "Iron Man"  
+**Lab_1** is an app that introduces Tony Stark "Iron Man"  
 
 Time spent: **10** hours spent in total
 
@@ -10,15 +10,15 @@ Time spent: **10** hours spent in total
 
 The following **required** functionality is completed:
 
-- [ ] Users are able to see a customized app icon and launch screen
-- [ ] Your app should work for any screen size and orientation using AutoLayout constraints
-  - [ ] Mark here if you will demostrate auto layout implemention as horizontal rotation or different phone size or both, then erase this text
-- [ ] Users are able to see at least 3 context items
-- [ ] Users are able to tap into each context item and see detail view contains information about each item (title, description, picture if applicable, etc.)
+- [x] Users are able to see a customized app icon and launch screen
+- [x] Your app should work for any screen size and orientation using AutoLayout constraints
+  - [] Mark here if you will demostrate auto layout implemention as horizontal rotation or different phone size or both, then erase this text
+- [x] Users are able to see at least 3 context items
+- [x] Users are able to tap into each context item and see detail view contains information about each item (title, description, picture if applicable, etc.)
  
 The following **optional** features are implemented:
 
-- [ ] Improve and customize the user interface through styling and coloring
+- [x] Improve and customize the user interface through styling and coloring
 - [ ] Allow users to scroll when context items are off-screen (table view implemention)
 
 The following **additional** features are implemented:
@@ -29,10 +29,19 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='https://i.imgur.com/68HqjYU.gifv' title='Video Walkthrough Ipad-mini' width='' alt='Video Walkthrough' />
 
-<!-- Replace this with whatever GIF tool you used! -->
-GIF created with ...  
+<img src='https://i.imgur.com/ZgVnk6v.gifv' title='Video Walkthrough IPhone14' width='' alt='Video Walkthrough' />
+
+<img src='https://i.imgur.com/WKVBph2.gifv' title='Video Walkthrough IPhone SE' width='' alt='Video Walkthrough' />
+
+<img src='https://i.imgur.com/64U7Spl.gifv' title='Video Walkthrough IPhone14 Pro' width='' alt='Video Walkthrough' />
+
+<img src='https://i.imgur.com/9FJvPNH.gifv' title='Video Walkthrough IPhone14 Pro Max' width='' alt='Video Walkthrough' />
+
+
+<!-- KAP -->
+GIF created with Kap 
 <!-- Recommended tools:
 [Kap](https://getkap.co/) for macOS
 [ScreenToGif](https://www.screentogif.com/) for Windows
@@ -41,10 +50,13 @@ GIF created with ...
 ## Notes
 
 Describe any challenges encountered while building the app.
+I had **trouble with auto layout constraints**. I know where the autolayout button is at the bottom of the xcode interface, and I know how to set constraints. However, my problem is I don't fully grasp the implication/consequences of using autolayout. For instance, when after setting all constraints, and using stack views, my imageView objects still go off screen or are positioned wrongly when I rotate views in the simulator. 
+-- In short, I would appreciate it if you guys **go over how to ensure support for all screen sizes**. I searched online and couldn't find any good resource. Most of the resources I got were doing it programmatically, and were all very old (videos were made 3-5 years ago)
+-- Tried doing table view for scrolling but could not find a good resource to teach me. 
 
 ## License
 
-    Copyright [yyyy] [name of copyright owner]
+    Copyright [2023] [Edwin Dake]
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
